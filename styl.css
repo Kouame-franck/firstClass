@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    box-shadow: 0 2px 3px;
+    font-size: 1.3rem;
+    
+}
+.menue{
+    display:none;
+}
+header .logo img{
+    height: 60px;
+    width: auto;
+   
+}
+header .recherche{
+    width: 100%;
+    
+    margin: 0;
+}
+#serch{
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin: 0;
+    background-color: rgb(231, 230, 230);
+    border: none;
+    outline: none;
+}
+#bttn{
+    border: none;
+    margin: 0;
+    
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+header ul{
+    display: flex;
+}
+header li{
+    list-style: none;
+    
+    margin: 0 10px;
+}
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+header select{
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+}
+.menue-bar{
+   position: absolute;
+   left:-500px;
+}
+
+.caroussel{
+    position:absolute;
+    right: 0;
+    margin:10px 0;
+    width:30vw;
+    height:150px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border-bottom: solide 1px grey; */
+    box-shadow: 0 1px 2px;
+    
+}
+.slides{
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+}
+.slide{
+    width: 100%;
+    max-width: 100%;
+    padding:auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex:1 0 100%;
+    
+    
+}
+.slide img{
+    width:100%;
+    
+    height: auto;
+    max-height: 150px;
+    margin: auto;
+    
+   
+}
+
+
+
+footer{
+    width: 100%;
+    max-width: 100%;
+    color: #e0dede;
+    background-color: rgba(0, 0, 0, 0.834);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top:700px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* ******************** responsive ************************ */
+
+@media all and (max-width:900px){
+
+    header{
+        flex-direction:column;
+        justify-content:space-between;
+        width:100vw;
+        max-width: 100vw;
+        font-size: 0.8rem;
+    }
+    .logo{
+        display:flex;
+        width:100vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logogroup{
+        display:flex;
+        align-items: center;
+    }
+    .fa-solid{
+        margin:0 10px;
+    }
+    header .recherche{
+      width: 100%;
+      box-sizing: border-box;
+      align-items:center;
+      margin:auto;
+      
+      margin-bottom: 10px;
+      padding:auto;
+    }
+    #serch{
+        width: 100%;
+
+    }
+    #recherche{
+        background-color: rgb(231, 230, 230);
+        padding:  5px 0;
+        display: flex;
+        width: 90%; 
+        margin: auto;
+        border-radius: 10px; 
+    }
+    #bttn{
+        background-color: rgb(231, 230, 230);
+        border-radius: 50%;
+    }
+    .nav{
+        position:absolute;
+        left:-500px;
+    }
+    .menue{
+        display:block
+    }
+    
+    /* styliser la bare de menue */
+
+    .menue-bar{
+        position:absolute;
+        left:-500px;
+        padding: 5px;
+        color:white;
+        background-color: rgba(13, 13, 13, 0.587);
+        width:80vw;
+        transition: 0.5s linear;
+       
+    }
+    .apparaitre{
+        position:absolute;
+        left:0;
+        padding: 5px;
+        color:white;
+        background-color: rgba(13, 13, 13, 0.885);
+        width:70vw;
+        transition: 0.5s linear;
+        z-index:10; 
+    }
+    .croix{
+        display:none;
+    }
+    .menue-bar a{
+        text-decoration: none;
+        color:white;
+        cursor:pointer;
+        
+    }
+
+   
+        .caroussel{
+           
+            margin:5px 0;
+            width:100vw;
+            height:150px;
+            overflow: hidden;
+            box-sizing: border-box;
+            /* border-bottom: solide 1px grey; */
+            box-shadow: 0 1px 2px;
+            
+        }
+        .slides{
+            width: 100%;
+            box-sizing: border-box;
+            display:flex;
+        }
+        .slide{
+            width: 100%;
+            max-width: 100%;
+            padding:auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex:1 0 100%;
+            
+            
+        }
+        .slide img{
+            width:100%;
+            
+            height: auto;
+            max-height: 150px;
+            margin: auto;
+            
+           
+        }
+
+
+}
