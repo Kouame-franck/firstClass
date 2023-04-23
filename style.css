@@ -7,13 +7,17 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto Condensed', sans-serif; 
 }
 header{
+    position: sticky;
+    top:0;
     width: 100%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid;
     box-shadow: 0 2px 3px;
     font-size: 1.3rem;
+    z-index: 5;
     
 }
 .menue{
@@ -64,15 +68,28 @@ header select{
     font-size: 1.2rem;
     outline: none;
 }
+.menue-bar a{
+   color:white;
+   text-decoration: none ;
+}
 .menue-bar{
-   position: absolute;
-   left:-500px;
+    position:absolute;
+    left:0px;
+    top: 70px;
+    padding: 5px;
+    color:white;
+    background-color: #011520;
+    width:20vw;
+    
+    transition: 0.5s linear;
+    z-index: 1;
+   
 }
 /* tableau de defile autoumatique */
 .caroussel{
     /* position:absolute; */
     right: 0;
-    margin:10px 0;
+    margin:10px 21vw;
     width:30vw;
     height:150px;
     overflow: hidden;
@@ -102,10 +119,161 @@ header select{
     height: auto;
     max-height: 150px;
     margin: auto;
+}
+.boiteTandences{
+    margin: 10px ;
+    margin-left: 21vw;
+    background-color:rgb(231, 237, 237);
+}
+.boiteTandences h4{
+    margin: 0;
+}
+.boiteTandences .libeles{
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #011520; 
+    font-size: 0.6rem;
+    color:white;
+    border-radius:5px;
+    margin:auto;
     
-   
+}
+.boiteTandences .libeles a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    
 }
 
+.tendances{
+    width: 78vw;
+    height: 200px;
+    overflow: scroll;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+
+}
+.tendances .tendance{
+    position: relative;
+    width: 10%;
+    height: 98%;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    background-color: white;
+    border-radius: 5px;
+    margin:0 5px;
+    flex:1 0 30vw;
+    padding: 0;
+}
+.tendances h6{
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+    margin: 0;
+}
+.tendance .prio{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.tendances a{
+    position: absolute;
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+    right: 8px;
+    bottom: 0;
+    margin: 0;
+}
+.tendances img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 130px;
+    margin: 0;
+}
+.deal{
+    position: relative;
+    width:10vw;
+    height: 98%;
+    /* background-color: rgb(135, 162, 162); */
+    background-color: white;
+    border-radius: 5px;
+    margin:0 5px;
+    flex:1 0 45vw;  
+}
+.boutique{
+    width: 78vw;
+    box-sizing: border-box;
+    padding: 5px;
+    margin:10px ;
+    margin-left:21vw;
+    text-align: center;
+    background-color:rgb(231, 237, 237);
+}
+.boutique h4{
+    width: 98vw;
+    margin:5px auto;
+    background-color: #011520;
+    font-size:0.8rem;
+    border-radius:5px;
+    color:white;
+    padding: 5px;
+}
+.articles{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+.article{
+    position: relative;
+    width: 20vw;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 5px;
+    background-color: white;
+}
+.article img{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+.article button{
+    border: none;
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 1.2rem;
+}
+.article h6{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.article small{
+    margin: 0;
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+}
+.article h5{
+    margin: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
 
 
 footer{
@@ -186,25 +354,37 @@ footer{
     .menue-bar{
         position:absolute;
         left:-500px;
+        top: 0;
         padding: 5px;
         color:white;
         background-color: rgba(13, 13, 13, 0.587);
         width:80vw;
+        height:100vh;
+        overflow: scroll;
         transition: 0.5s linear;
+        z-index: 10;
        
     }
     .apparaitre{
         position:absolute;
+        top: 0;
         left:0;
         padding: 5px;
         color:white;
         background-color: rgba(13, 13, 13, 0.885);
         width:70vw;
+        height:100vh;
+        overflow: scroll;
         transition: 0.5s linear;
         z-index:10; 
     }
     .croix{
+        position: absolute;
+        top: 0;
+        right: 0;
         display:none;
+        color:white;
+        z-index: 15;
     }
     .menue-bar a{
         text-decoration: none;
@@ -254,18 +434,24 @@ footer{
         margin: 0;
     }
     .boiteTandences .libeles{
-        width: 100vw;
+        width: 98vw;
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        padding: 5px;
-        background-color: #9DC9E0;
+        padding: 0 10px;
+        align-items: center;
+        background-color: #011520; 
+        font-size: 0.6rem;
+        color:white;
+        border-radius:5px;
+        margin:auto;
         
     }
     .boiteTandences .libeles a{
         text-decoration: none;
-        color: black;
+        color: white;
         padding: 5px 15px;
+        font-size: 0.8rem;
         
     }
 
@@ -337,9 +523,13 @@ footer{
         background-color:rgb(231, 237, 237);
     }
     .boutique h4{
-        width: 100vw;
-        margin:5px 0;
-        background-color: #9DC9E0;
+        width: 98vw;
+        margin:5px auto;
+        background-color: #011520;
+        font-size:0.8rem;
+        border-radius:5px;
+        color:white;
+        padding: 5px;
     }
     .articles{
         display: flex;
@@ -349,7 +539,7 @@ footer{
     }
     .article{
         position: relative;
-        width: 43vw;
+        width: 45vw;
         height: 150px;
         box-sizing: border-box;
         margin: 5px;
