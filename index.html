@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fisrt class vente en ligne</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +26,11 @@
                     <img src="image/logo_rogner.png" alt="logo first class">
             </div>   
             <div class="menue responsive_id">
-            <!-- <i class="fa-regular fa-user"></i> -->
             
-                <a id="panier" href=""><i style="color:black; font-size:1.5rem;" class="fa-solid fa-cart-shopping"></i><small>3</small></a>
+           
+                <a  href=""><i style="color:black; font-size:1.5rem;" class="fa-solid fa-cart-shopping"></i><small id="panier"></small></a>
                 <a href=""><i style="color:black; font-size:1.5rem;" class="fa-regular fa-user"></i></a>
-                <!-- <i style="color:black; font-size:1.5rem;" class="fa-solid fa-user"></i> -->
+                
             </div>
         </div>
         <div class="recherche">
@@ -40,6 +42,7 @@
         </div>
         <div class="nav">
             <ul>
+                <li id="cache"><a  href=""><i style="color:black; font-size:1.5rem;" class="fa-solid fa-cart-shopping"></i><small id="panier1"></small></a></li>
                 <li><a href="">accueil</a></li>
                 <li>
                     <form action="">
@@ -62,39 +65,48 @@
     </header>
 
     <div class="menue-bar">
-    <div class="menue croix">
-                        <i style=" font-size:2rem;" class="fa-solid fa-xmark"></i>
-                    </div>
+
+        <div class="menue croix">
+            <i style=" font-size:2rem;" class="fa-solid fa-xmark"></i>
+        </div> <br>
+
         <div class="accueil">
-            
-            <a href="index.php"><h3>ACCUEIL</h3></a>
+            <a href="index.php">
+                <h3><span class="material-icons-outlined"> home</span>ACCUEIL</h3> <br><br>
+            </a>
         </div>
+
         <div class="categories">
-        <!-- <img style="height:50px;margin:0;" src="image/logo_rogner.png" alt="logo first class"> -->
-            <h3>CATEGORIES</h3>
-            <a href=""><i class="fa-solid fa-user-tie"></i> homme</a><br><br>
+            <h3>CATEGORIES</h3> <br>
+            <a href=""><i class="fa-solid fa-user-tie"></i> homme</a> <br><br>
             <a href=""><i class="fa-solid fa-person-dress"></i> femme</a><br><br>
             <a href=""><i class="fa-solid fa-wand-magic-sparkles"></i> bijoux</a><br><br>
             <a href=""><i class="fa-sharp fa-solid fa-shirt"></i> vetements</a><br><br>
             <a href=""><i class="fa-solid fa-shoe-prints"></i> chaussures</a><br><br>
-            <a href=""><i class="fa-solid fa-toolbox"></i> accessoirs</a>
+            <a href=""><i class="fa-solid fa-toolbox"></i> accessoirs</a> <br> <br>
         </div>
+
         <div class="mon-compte">
-            <h3>MON COMPTE</h3>
+            <h3>MON COMPTE</h3> <br> <br>
             <a href=""><i class="fa-solid fa-cart-shopping"></i> mon panier</a><br><br>
             <a href=""><i class="fa-solid fa-pen-to-square"></i>mes commandes</a><br><br>
-            <a href=""><i class="fa-solid fa-message"></i> discutions</a>
+            <a href=""><i class="fa-solid fa-message"></i> discutions</a> <br><br>
         </div>
-        <div class="partenaires">
-            
-            <a href=""><h3>DEVENIR PARTENAIRE</h3></a>
+
+        <div class="partenaires"> 
+            <a href=""><h3><span class="material-icons-outlined"> cases</span>  DEVENIR PARTENAIRE</h3></a> <br>
         </div>
+
         <div class="a-propos"> 
-            <h3>A PROPOS</h3>
-            <a href="">qui somme-nous?</a><br>
-            <a href="">nos contacts</a>
+            <h3><span class="material-icons-outlined">accessibility</span>  A PROPOS</h3><br> <br>
+
+            <a href=""><span class="material-icons-outlined">contact_support</span>qui somme-nous?</a><br> <br>
+            <a href=""><span class="material-icons-outlined">contactless</span>nos contacts</a> <br> <br>
         </div>
+
     </div>
+
+
 
     <div class="caroussel">
         <div class="slides">
@@ -109,28 +121,29 @@
             </div>
         </div>
     </div>
+
     <div class="boiteTandences">
         <div class="libeles">
             <h4>Tendances</h4>
-            <a href="">voir plus</a>
+            <a class="voirplus" href="">voir plus</a>
         </div>
         
         <div class="tendances">
             <div class="tendance">
-            <img src="image/promo3.jpg" alt="">
-                <a class="prio" href=""></a>
+            
+                <a  class="prio" href=""><img src="image/montre1.png" alt=""></a>
                 
                 
                 <h6>1000 Fcfa</h6>
-                <a href="">voir</a>
+                <a class="voir" href="">voir</a>
             </div>
             <div class="tendance">
             <img src="image/chauss1.jpeg" alt="">
-                <a class="prio" href=""></a>
+                <a class="prio" href=""><img src="image/chauss1.jpeg" alt=""></a>
                 
                 
                 <h6>45 000 Fcfa</h6>
-                <a href="">voir</a>
+                <a class="voir" href="">voir</a>
             </div>
             <div class="tendance">
                 
@@ -152,21 +165,27 @@
     <div class="boiteTandences superdeal">
         <div class="libeles">
             <h4>super deal</h4>
-            <a href="">voir plus</a>
+            <a class="voirplus" href="">voir plus</a>
         </div>
         
         <div class="tendances">
             <div class="deal">
-            <img src="image/promo2.png" alt="">
-                
+            
+              <a class="prio" href=""><img src="image/promo2.png" alt=""></a>  
                 <h6>1000 Fcfa</h6>
-                <a href="">voir</a>
+                <a class="voir" href="">voir</a>
             </div>
             <div class="deal">
-            <img src="image/bijou2.jpeg" alt="">
-                
+            
+             <a class="prio" href=""><img src="image/bijou2.jpeg" alt=""></a>   
                 <h6>1000 Fcfa</h6>
-                <a href="">voir</a>
+                <a class="voir" href="">voir</a>
+            </div>
+            <div class="deal">
+            
+               <a class="prio" href=""><img src="image/montre3.png" alt=""></a> 
+                <h6>1000 Fcfa</h6>
+                <a class="voir" href="">voir</a>
             </div>
             <div class="deal">
                 
@@ -189,21 +208,58 @@
         <h4>BOUTIQUE </h4>
         <div class="articles">
             <div class="article">
-                <img src="image/blaser.jpeg" alt="">
                 
+                <a class="prio" href=""><img src="image/blaser.jpeg" alt=""></a>
                 <h5>blaser h5 </h5>
                 <small>blaseer homme  </small>
                 <h6>15 000 Fcfa</h6>
-                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="raj rajout"> 
+                    <span class="material-icons-outlined">
+                        add_shopping_cart
+                    </span>
+                </button>
+                <button class="retr retrait">
+                    <span class="material-icons-outlined">
+                        remove_shopping_cart
+                    </span>
+                </button>
             
             </div>
             <div class="article">
-                <img src="image/chauss3.jpeg" alt="">
+                
+                <a class="prio" href=""><img src="image/chauss3.jpeg" alt=""></a>
                 
                 <h5>mocassin </h5>
                 <small>chaussure cuir  </small>
                 <h6>85 000 Fcfa</h6>
-                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="raj rajout">
+                <span class="material-icons-outlined">
+                        add_shopping_cart
+                    </span>
+                </button>
+                <button class="retr retrait">
+                    <span class="material-icons-outlined">
+                        remove_shopping_cart
+                    </span>
+                </button>
+            
+            </div>
+            <div class="article">
+                <img src="image/montre2.png" alt="">
+                
+                <h5>blaser h5 </h5>
+                <small>chaussure homme  </small>
+                <h6>35 000 Fcfa</h6>
+                <button class="raj rajout"> 
+                    <span class="material-icons-outlined">
+                        add_shopping_cart
+                    </span>
+                </button>
+                <button class="retr retrait">
+                    <span class="material-icons-outlined">
+                        remove_shopping_cart
+                    </span>
+                </button>
             
             </div>
             <div class="article">
@@ -222,9 +278,7 @@
     </div>
     
 
-    <script>
-        console.log("bonjour");
-    </script>
+   
     
 
     

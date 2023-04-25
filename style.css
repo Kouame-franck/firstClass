@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -19,6 +23,9 @@ header{
     font-size: 1.3rem;
     z-index: 5;
     
+}
+.retrait{
+    visibility: hidden;
 }
 .menue{
     display:none;
@@ -129,7 +136,7 @@ header select{
     margin: 0;
 }
 .boiteTandences .libeles{
-    width: 98vw;
+    width: 77vw;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -142,7 +149,7 @@ header select{
     margin:auto;
     
 }
-.boiteTandences .libeles a{
+.boiteTandences .libeles .voirplus{
     text-decoration: none;
     color: white;
     padding: 5px 15px;
@@ -169,7 +176,7 @@ header select{
     background-color: white;
     border-radius: 5px;
     margin:0 5px;
-    flex:1 0 30vw;
+    flex:1 0 12vw;
     padding: 0;
 }
 .tendances h6{
@@ -183,7 +190,7 @@ header select{
     padding: 0;
     text-decoration: none;
 }
-.tendances a{
+.tendances .voir{
     position: absolute;
     text-decoration: none;
     color:black;
@@ -207,10 +214,10 @@ header select{
     background-color: white;
     border-radius: 5px;
     margin:0 5px;
-    flex:1 0 45vw;  
+    flex:1 0 15vw;  
 }
 .boutique{
-    width: 78vw;
+    width: 77vw;
     box-sizing: border-box;
     padding: 5px;
     margin:10px ;
@@ -219,7 +226,7 @@ header select{
     background-color:rgb(231, 237, 237);
 }
 .boutique h4{
-    width: 98vw;
+    width: 75vw;
     margin:5px auto;
     background-color: #011520;
     font-size:0.8rem;
@@ -235,7 +242,7 @@ header select{
 }
 .article{
     position: relative;
-    width: 20vw;
+    width: 18vw;
     height: 200px;
     box-sizing: border-box;
     margin: 5px;
@@ -255,6 +262,8 @@ header select{
     bottom: 0;
     right: 10px;
     font-size: 1.2rem;
+    color:rgba(6, 74, 147, 0.897);
+    
 }
 .article h6{
     margin: 0;
@@ -308,6 +317,26 @@ footer{
         width:100vw;
         justify-content: space-between;
         align-items: center;
+    }
+    #cache{
+        visibility:hidden;
+    }
+    .responsive_id{
+        position:relative;
+    }
+    .responsive_id small{
+        width:15px;
+        border-radius:50%;
+        text-align: center;
+        color:red;
+        position:absolute;
+        background-color: white;
+        font-weight:5px;
+        font-size:1rem;
+        margin: 0;
+        padding: 0;
+        left:18px;
+        top:-10px;
     }
     .logogroup{
         display:flex;
@@ -447,7 +476,7 @@ footer{
         margin:auto;
         
     }
-    .boiteTandences .libeles a{
+    .boiteTandences .libeles .voirplus{
         text-decoration: none;
         color: white;
         padding: 5px 15px;
@@ -487,8 +516,14 @@ footer{
         margin: 0;
         padding: 0;
         text-decoration: none;
+        
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 90px;
+        margin: 0;
     }
-    .tendances a{
+    .tendances .voir{
         position: absolute;
         text-decoration: none;
         color:black;
@@ -523,13 +558,14 @@ footer{
         background-color:rgb(231, 237, 237);
     }
     .boutique h4{
-        width: 98vw;
+        width: 95vw;
         margin:5px auto;
         background-color: #011520;
         font-size:0.8rem;
         border-radius:5px;
         color:white;
         padding: 5px;
+        
     }
     .articles{
         display: flex;
@@ -559,6 +595,22 @@ footer{
         bottom: 0;
         right: 10px;
         font-size: 1.2rem;
+    }
+    .article .retrait{
+        visibility: hidden;
+    }
+    .article .rajout{
+        border: none;
+        background-color: white;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        font-size: 1.2rem;
+        
+    }
+    .rajout .retr{
+        color:red;
     }
     .article h6{
         margin: 0;
