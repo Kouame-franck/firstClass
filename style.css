@@ -179,6 +179,7 @@ header select{
     flex:1 0 12vw;
     padding: 0;
 }
+
 .tendances h6{
     position: absolute;
     left: 8px;
@@ -189,6 +190,12 @@ header select{
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 130px;
+    margin: 0;
 }
 .tendances .voir{
     position: absolute;
@@ -323,6 +330,7 @@ footer{
     }
     .responsive_id{
         position:relative;
+        right:10px;
     }
     .responsive_id small{
         width:15px;
@@ -585,7 +593,7 @@ footer{
         width:100%;
         max-width: 100%;
         height: auto;
-        max-height: 110px;
+        max-height: 105px;
     }
     .article button{
         border: none;
@@ -630,6 +638,128 @@ footer{
         bottom: 40px;
         left: 10px;
     }
+/* ***************fiche articles*********** */
 
+    .article-selectione{
+        margin:20px 0;
+        padding:auto;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100vw;
+        /* height: 80vh; */
+        align-items: center;
+        /* text-align:center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        overflow:hidden
+    }
+    .article-selectione h3{
+        margin: 20px;
+    }
+    .article-selectione .images{
+        width:100vw;
+        /* height:60vh;
+        max-height: 60vh; */
+        display: flex;
+        overflow:scroll;
+        background-color: #e0dede;
+    }
+    .article-selectione .image{
+        width:100vw;
+        height:60vh ;
+        max-height: 60vh;
+        background-color: white;
+        border-radius: 5px;
+        flex:1 0 100%;
+        
+    }
+    .article-selectione img{
+        width:100vw;
+        height:auto ;
+        max-height: 60vh;
+    }
+    .carracteristiques{
+        display: flex;
+        flex-direction:column;
+        width: 100vw;
+        padding: 10px;
+        box-sizing:border-box;
+    }
+    .carracteristiques .prix{
+        text-align: left;
+        color:rgb(2, 2, 44);
+    }
+    .carracteristiques .prix p{
+        color:rgb(2, 2, 44);
+    }
+    .carracteristiques .tailles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto ;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 50px;
+        
+    }
+    .carracteristiques .description small{
+        text-align: left;
+    }
+    .carracteristiques .option{
+        border-radius: 5px;
+        background-color: white;
+        margin: 5px;
+        border:solid 1px;
+        width: 18%;
+        height: 100%;
+    }
+    .actions{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin:20px auto; 
+        
+    }
+    .actions button{
+        background-color: white;
+        padding:5px 10px;
+        border:none;
+        cursor:pointer;
+        
+    }
+    .actions material-icons-outlined{
+        border:none;
+        width: 20px;
+    }
+    .achat{
+        background-color: rgb(4, 186, 4);
+    }
+    .articles_sm{
+        width: 100vw;
+        height: 100px;
+        overflow: scroll;
+        display: flex;
+        box-sizing: border-box;
+        background-color: #e0dede;
+    }
+    .article_sm{
+        width: 30vw;
+        height: auto;
+        max-height: 100%;
+        margin: 5px;
+        background-color: white;
+        border-radius:5px;
+        flex:1 0 30vw;
+    }
+    .article_sm img{
+        width:100%;
+        height:auto;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
 }
